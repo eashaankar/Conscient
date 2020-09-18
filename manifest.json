@@ -1,23 +1,22 @@
 {
     "name": "Conscient",
     "version": "1.0",
-    "manifest_version": 2,
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-    "content_scripts":[
-        {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-
-        }
-    ],
-    "browser_action":{
-        "default_title":"conscient_extension",
-        "default_popup":"popup.html"
+    "description": "Build an Extension!",
+    "permissions": ["declarativeContent","storage","activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
     },
-
-    "permissions": [
-        "activeTab",
-        "storage",
-        "tabs"
-]
-}
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        
+        "128": "565.png"
+      }
+    },
+    "icons": {
+     
+      "128": "565.png"
+    },
+    "manifest_version": 2
+  }
