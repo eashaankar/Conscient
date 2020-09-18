@@ -8,13 +8,7 @@
       "scripts": ["background.js"],
       "persistent": false
     },
-    "page_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        
-        "128": "565.png"
-      }
-    },
+   
     "icons": {
      
       "128": "565.png"
