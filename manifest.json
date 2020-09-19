@@ -14,7 +14,7 @@
       "128": "565.png"
     },
     "browser_action":{
-        "default_title":"bear",
+        "default_title":"Conscient",
         "default_popup":"popup.html"
     }
 
