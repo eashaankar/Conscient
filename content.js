@@ -17,4 +17,3 @@ if(document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqn
 }
 
 document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div").style.pointerEvents = "none"
-document.querySelector('#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div').style.background = '#BEBEBE'
