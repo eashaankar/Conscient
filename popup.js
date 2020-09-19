@@ -95,7 +95,7 @@ mute3.addEventListener('click',function(e){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-        {file:'video-audio.js'});
+        {file:'video_audio.js'});
     });
   }
   else if(!e.target.checked)
