@@ -10,8 +10,10 @@
     },
    
     "icons": {
-     
-      "128": "565.png"
+
+      "16": "logo/conscient_logo_16.png",
+      "48": "logo/conscient_logo_48.png",
+      "128": "logo/conscient_logo_128.png"
     },
     "browser_action":{
         "default_title":"Conscient",

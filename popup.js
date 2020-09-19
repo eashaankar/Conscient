@@ -99,14 +99,16 @@ mute2.addEventListener('click',function(e){
 let mute3 = document.getElementById('mute3');
 
 let status2 = localStorage.getItem('status2');
-if(status2 === 'checked'){
+if(status2 == 'checked'){
   mute3.click();
 }
 
 mute3.addEventListener('click',function(e){
   if(e.target.checked){
-    document.getElementById("mute1").disabled = true;
-    document.getElementById("mute2").disabled = true;
+    if(mute1.checked)
+     mute1.click()
+    if(mute2.checked)
+     mute2.click()
     localStorage.setItem('status2','checked')
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
@@ -114,11 +116,6 @@ mute3.addEventListener('click',function(e){
         {file:'video_audio.js'});
         onAudio();
     });
-  }
-  else if(!e.target.checked)
-  {
-    document.getElementById("mute1").disabled = false;
-    document.getElementById("mute2").disabled = false;
   }
   else{
     localStorage.setItem('status2','unchecked')
