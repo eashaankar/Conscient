@@ -26,9 +26,15 @@
           {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div").style.pointerEvents = "none"'});
     });
   }; */
+
+var audio = document.getElementById("audioMusic");
+    function bell(){
+        audio.play()
+    }
 let mute1 = document.getElementById('mute1');
 
 let status = localStorage.getItem('status');
+
 if(status === 'checked'){
   mute1.click();
 }
