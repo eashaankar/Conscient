@@ -2,3 +2,82 @@ body{
     width: 450px;
     height:450px;
 }
+h1
+{
+
+text-align: center;
+
+}
+#f
+{
+position: relative;
+width: 191px;
+height: 24px;
+left: 129px;
+top: 6px;
+
+font-family: Noto Sans;
+font-style: italic;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+
+color: #000000;
+margin-bottom: 10px;
+
+}
+.button
+{
+    position: absolute;
+    width: 368px;
+    height: 66px;
+    left: 41px;
+    top:30px;
+    bottom:277px;
+
+    background: #FFFFFF;
+    opacity: 0.85;
+    border-radius: 11px;
+    margin-bottom: 50px;
+}
+.button2 {border-radius: 4px;}
+
+.button
+{
+    position: relative;
+    width: 368px;
+    height: 66px;
+    left: 41px;
+   
+    bottom:166px;
+    background: #FFFFFF;
+    opacity: 0.85;
+    border-radius: 11px;
+}
+.button3 {border-radius: 4px;}
+
+
+
+
+.button
+{
+position: relative;
+width: 368px;
+height: 66px;
+left: 41px;
+
+bottom:55px;
+
+
+opacity: 0.85;
+
+border-radius: 11px;
+
+
+}
+.button4 {border-radius: 11px;
+    background: #D62839;
+color:#ffffff}
+
+
