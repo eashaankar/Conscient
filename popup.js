@@ -110,3 +110,31 @@ mute3.addEventListener('click',function(e){
   }
   
 })
+
+//dark mode
+let dark = document.getElementById('dark');
+
+let statusdark = localStorage.getItem('statusdark');
+if(statusdark == 'checked'){
+  dark.click();
+}
+
+dark.addEventListener('click',function(e){
+  if(e.target.checked){
+    localStorage.setItem('statusdark','checked')
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.executeScript(
+        tabs[0].id,
+        {file:'darkmode.js'});
+    });
+  }
+  else{
+    localStorage.setItem('statusdark','unchecked')
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      chrome.tabs.executeScript(
+          tabs[0].id,
+          {file:'darkmodeoff.js'});
+      });
+  }
+  
+})

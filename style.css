@@ -110,3 +110,11 @@ input:checked+.slider:before {
     font-size: 100 px;
     margin-left: 20px;
   }
+
+.bgdark{
+    background-color:#383F51;
+}
+
+.textlight{
+    color: #DDDBF1;
+}
