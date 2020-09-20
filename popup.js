@@ -26,9 +26,21 @@
           {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div").style.pointerEvents = "none"'});
     });
   }; */
-let mute1 = document.getElementById('mute1');
 
+  var x = document.getElementById("myAudioon"); 
+  var y = document.getElementById("myAudiooff"); 
+        
+  function onAudio() { 
+    x.play(); 
+  }
+
+  function offAudio() { 
+    y.play(); 
+  }
+
+let mute1 = document.getElementById('mute1');
 let status = localStorage.getItem('status');
+
 if(status === 'checked'){
   mute1.click();
 }
@@ -40,6 +52,7 @@ mute1.addEventListener('click',function(e){
     chrome.tabs.executeScript(
         tabs[0].id,
         {file:'content.js'});
+        onAudio();
     });
   }
   else{
@@ -48,6 +61,7 @@ mute1.addEventListener('click',function(e){
       chrome.tabs.executeScript(
           tabs[0].id,
           {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div").style.pointerEvents = "all"'});
+          offAudio();
       });
   }
   
@@ -67,6 +81,7 @@ mute2.addEventListener('click',function(e){
     chrome.tabs.executeScript(
         tabs[0].id,
         {file:'video.js'});
+        onAudio();
     });
   }
   else{
@@ -74,7 +89,8 @@ mute2.addEventListener('click',function(e){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       chrome.tabs.executeScript(
           tabs[0].id,
-          {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.SfBQ6c > div > div").style.pointerEvents="all";'});
+          {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd.LCXT6 > div.q2u11 > div.SfBQ6c > div > div").style.pointerEvents="all";'});
+          offAudio();
       });
   }
   
@@ -98,6 +114,7 @@ mute3.addEventListener('click',function(e){
     chrome.tabs.executeScript(
         tabs[0].id,
         {file:'video_audio.js'});
+        onAudio();
     });
   }
   else{
@@ -105,7 +122,8 @@ mute3.addEventListener('click',function(e){
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
       chrome.tabs.executeScript(
           tabs[0].id,
-          {file:'video_audio_off.js'});
+          {file:'video_audio.js'});
+          offAudio();
       });
   }
   
