@@ -26,6 +26,7 @@
           {code: 'document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(5) > div.crqnQb > div.rG0ybd > div.q2u11 > div.a1GRr > div > div > div").style.pointerEvents = "none"'});
     });
   }; */
+
 let mute1 = document.getElementById('mute1');
 
 let status = localStorage.getItem('status');
@@ -67,6 +68,7 @@ mute2.addEventListener('click',function(e){
     chrome.tabs.executeScript(
         tabs[0].id,
         {file:'video.js'});
+        onAudio();
     });
   }
   else{
@@ -98,6 +100,7 @@ mute3.addEventListener('click',function(e){
     chrome.tabs.executeScript(
         tabs[0].id,
         {file:'video_audio.js'});
+        onAudio();
     });
   }
   else{
