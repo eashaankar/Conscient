@@ -1,7 +1,7 @@
 body{
     width:300px;
     height:190px;
-    background: radial-gradient(59.14% 59.14% at 50% 93.19%, rgba(211, 208, 208, 0) 0%, #F5F5F5 100%);
+    background: white;
     opacity: 0.85;
 }
 
@@ -12,10 +12,10 @@ font-family: 'Montserrat', sans-serif;
 }
 #caption
 {
-position: relative;
+
 width: 191px;
 height: 24px;
-top: 5px;
+top: 50px;
 left: 60px;
 text-align: center;
 
@@ -23,7 +23,7 @@ font-family: 'Montserrat', sans-serif;
 
 font-weight: 600;
 font-size: 12px;
-line-height: 16px;
+
 text-align: center;
 
 color: #000000;
@@ -107,6 +107,47 @@ input:checked+.slider:before {
     padding-right: 90px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 100 px;
+    font-size: 30 px;
     margin-left: 20px;
   }
+  #prvo {
+    background-color:black;
+    border: none;
+    
+    padding: 10px;
+    border-radius: 40%;
+   cursor:pointer;
+    font-size: 2px;
+    margin: 6px 6px;
+    position:fixed;
+    top:0;
+    right:0;
+  }
+  
+  .colored {
+    background-color:black;
+    
+   
+
+    
+    
+    
+    }
+
+    .doc{
+       
+       
+        font-family: 'Montserrat', sans-serif;
+       
+       
+        color:white;
+    }
+    .wal{
+    
+       
+       
+        font-family: 'Montserrat', sans-serif;
+       
+       
+        color:white;
+    }
